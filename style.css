@@ -78,8 +78,8 @@ body {
   font-size: 2rem;
   background-color: #ff52c1;
   color: white;
-  width: 400px;
-  height: 80px;
+  width: 40rem;
+  height: 8rem;
   border-radius: 6rem;
   -webkit-box-shadow: 0px 0px 4px #979797;
           box-shadow: 0px 0px 4px #979797;
@@ -178,9 +178,33 @@ section.hero .content .stats h4 {
 
 section.grow-together {
   padding-top: 10rem;
+  height: 841px;
+  position: relative;
+}
+
+section.grow-together:before {
+  content: "";
   background-image: url("./images/bg-section-top-desktop-1.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -14%;
+}
+
+section.grow-together:after {
+  content: "";
+  background-image: url("./images/bg-section-bottom-desktop-1.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+section.grow-together div.container {
+  background-color: #2a9d8f;
 }
 
 section.grow-together .content {
